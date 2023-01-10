@@ -11,13 +11,13 @@ import java.util.ArrayList;
  * @author tulio
  */
 public class MemoryProdutoRepository implements ProdutoRepository<Produto>{
-    private ArrayList<Produto> produtos;
+    private ArrayList<Produto> produtos; //lista de produtos armazenados em memória
     
     MemoryProdutoRepository(ArrayList<Produto> p){
-        produtos = new ArrayList(p);
+        produtos = new ArrayList(p);  //construtor recebendo um arraylist já populado
     }
     MemoryProdutoRepository(){
-        produtos = new ArrayList();
+        produtos = new ArrayList(); //construtor padrão
     }
     
     @Override
